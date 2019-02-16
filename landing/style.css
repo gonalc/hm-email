@@ -1,0 +1,178 @@
+body {
+  background-color: #ccc;
+  font-family: 'Lato', sans-serif;
+  background-image: url(img/christmas.jpeg);
+  background-size: cover;
+}
+
+.clear,
+.clear::after,
+.clear::before {
+  clear: both;
+}
+
+main {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 20%;
+  background-color: white;
+  /* border: 1px solid rgba(0, 0, 0, .7); */
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, .4);
+}
+
+main form {
+  width: 50%;
+  float: right;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+main form input[type='text'],
+main form input[type='number'],
+main form input[type='email'] {
+  width: 40%;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 8px;
+  border: 1px solid #d51a1a;
+  font-size: 14px;
+}
+
+main form input[type='text']::placeholder,
+main form input[type='number']::placeholder,
+main form input[type='email']::placeholder {
+  color: #d51a1a;
+}
+
+main form input[type='text']:active,
+main form input[type='text']:focus,
+main form input[type='number']:active,
+main form input[type='number']:focus,
+main form input[type='email']:active,
+main form input[type='email']:focus,
+select, input[type="color" i][list]:focus,
+select, input[type="color" i][list]:active {
+  outline: none;
+}
+
+select, input[type="color" i][list] {
+  border: none;
+  padding: 10px;
+  height: 30px;
+  font-size: 14px;
+  width: 93%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* ================ */
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #d51a1a;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+}
+
+.gender {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+.man {
+  float: left;
+}
+
+.woman {
+  float: right;
+}
+
+input[type='submit'] {
+  width: 100%;
+  background-color: #d51a1a;
+  padding: 15px;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #d24a4a;
+}
+
+input[type='submit']:active,
+input[type='submit']:focus {
+  outline: none;
+}
+
+main .left {
+  width: 50%;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  background-image: url(img/ildemariahm.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.image_top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 25px;
+  z-index: 500;
+}
+
+.image_bottom {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  top: 119px;
+  left: 0;
+}
